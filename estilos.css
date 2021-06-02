@@ -1,0 +1,611 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+
+
+.contenedor{
+    padding: 600px 300px;
+    width:900px;
+    max-width: 1000px;
+    margin:right;
+overflow:hidden;
+}
+.titulo{
+    color: 	#00fa9a;
+    -webkit-text-stroke:2px ;
+    font-size: 50px;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+header{
+
+    width: 100%;
+    height:600px;
+    background: #314439;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #0576e6, #00f261);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #0576e6ab, #00f261a6), url(img/cb.png);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    background-size: cover ;
+    background-attachment: fixed;
+    position: relative;
+}
+
+ul{
+    text-align:right;
+    padding:30px 50px 0 0;
+}
+
+ul > a{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 9px;
+
+}
+ul >a:hover{
+text-decoration: underline;
+}
+
+header .textos-header{
+    display:flex;
+    height: 430;
+    width: 100%;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center;
+
+}    
+.textos-header h1{
+    font-size: 50;
+    color: #fff
+
+}
+
+.textos-header h2{
+    font-size:30px;
+    font-weight: #fff;
+
+}
+
+.wave{
+    position: absolute;
+    bottom:0;
+    width:100%;
+
+}
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.imagen-about-us{
+    width: 48%;
+
+}
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+
+}
+.contenido-textos h3 span{
+    background:#01f3bf;
+    color:#fff;
+    border-radius: 50%;
+    display:inline-block;
+    text-align: center;
+    width: 60px;
+    height: 30px;
+    padding:5px;
+    box-shadow: 0 0 6px 0 rgb(0, 0, 0);
+    margin-right: 5px;
+}
+
+.contenedor-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: center;
+
+}
+.portafolio{
+    background:#f2f2f2;
+
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow:  hidden;
+    position: relative;
+    cursor:pointer;
+    box-shadow: 0 0 6px 0 rgb(0, 0, 2);
+
+}
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: conver;
+    display:block;
+}
+
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: #01f3bf(273,91%,27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/* Clients */
+
+
+.about-services{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+
+.servicio-cont{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 60%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 80%;
+}
+
+.servicio-ind h3{
+    margin: 30px 50px;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* footer */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: rgb(6, 135, 139);
+    border-bottom: 3px solid #01f3bf;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: rgb(255, 255, 255);
+    background-color:#01f3bf ;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #fafafa59;
+}
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-about-us{
+        width: 90%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 44%;
+    }
+
+
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .servicio-ind img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .textos-header h1{
+        font-size: 35px;
+    }
+
+    .textos-header h2{
+        font-size: 20px;
+    }
+
+    /* ABOUT US */
+
+    .imagen-about-us{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 95%;
+    }
+
+
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #ffffff;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+}
+
+.recursamiento{
+    background:rgb(253, 255, 255);
+    height:150px;
+    margin:2rem auto;
+    position:relative;
+    text-align: center;
+    width: 600px;
+
+}
+
+.recursamiento e{
+    font-size: 1rem;
+    margin:0;
+    padding:0 1 rem;
+    vertical-align: middle;
+    background-color: #ffffff;
+}
+
+
+
+h6{
+     background-color:#ffffff;
+     width: 560px;
+     font-size: 15px;
+     vertical-align: middle;
+     text-anchor: 10px;
+}
+ 
+
+li {
+text-align: right;
+padding: 30px 50px 0 0;
+
+background-color: rgba(135, 207, 235, 0.349);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+
+}
+li > a{
+color: #fff;
+font-weight: 10;
+text-decoration:none;
+margin-right: 10px;
+
+
+}
+
+
+li >a:hover{
+    text-decoration: underline;
+}
+body {
+  font-family: sans-serif;
+}
+
+.construyete{
+    background:greenyellow;
+    text-decoration:none;
+    width: 170px;
+    height: 80px;
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.25em;
+    margin:20px;
+    text-align: center;
+    border-radius: 3px;
+
+
+}
+
+.construyete > a{
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+.construyete a:hover{
+    text-decoration:underline;
+
+}
+
+.construyete22{
+    background:gold;
+    text-decoration:none;
+    width: 170px;
+    height: 80px;
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.25em;
+    margin:20px;
+    text-align: center;
+    border-radius: 3px;
+
+
+}
+
+.construyete22 > a{
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+.construyete22 a:hover{
+    text-decoration:underline;
+
+}
+
+.construyete33{
+    background:rgb(248, 147, 15);
+    text-decoration:none;
+    width: 170px;
+    height: 80px;
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.25em;
+    margin:20px;
+    text-align: center;
+    border-radius: 3px;
+
+}
+.construyete33 > a{
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+.construyete33 a:hover{
+    text-decoration:underline;
+
+}
+
+.construyete44{
+    background:rgb(221, 31, 189);
+    text-decoration:none;
+    width: 170px;
+    height: 80px;
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.25em;
+    margin:20px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.construyete44 > a{
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+.construyete44 a:hover{
+    text-decoration:underline;
+
+}
+.construyete55{
+    background:rgb(39, 233, 233);
+    text-decoration:none;
+    width: 170px;
+    height: 80px;
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.25em;
+    margin:20px;
+    text-align: center;
+    border-radius: 3px;
+
+
+}
+.construyete55 > a{
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+.construyete55 a:hover{
+    text-decoration:underline;
+
+}
+
+.construyete66{
+    background:rgb(255, 0, 0);
+    text-decoration:none;
+    width: 170px;
+    height: 80px;
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.25em;
+    margin:20px;
+    text-align: center;
+    border-radius: 3px;
+
+}
+
+.construyete66 > a{
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+.construyete66 a:hover{
+    text-decoration:underline;
+
+}
+
+.hoh{
+    background:rgb(248, 147, 15);
+    text-decoration:none;
+    width: 170px;
+    height: 80px;
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.25em;
+    margin:20px;
+    text-align: center;
+    border-radius: 3px;
+
+}
+.hoh > a{
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+.hoh a:hover{
+ text-decoration: underline;
+}
+.hoh1{
+    background:rgb(248, 233, 15);
+    text-decoration:none;
+    width: 170px;
+    height: 80px;
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.25em;
+    margin:20px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.hoh1 > a{
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration:none;
+}
+.hoh1 :hover{
+    text-decoration: underline;
+}
+
+
+
+
